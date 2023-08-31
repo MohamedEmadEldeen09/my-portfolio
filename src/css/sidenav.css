@@ -1,0 +1,110 @@
+
+:root{
+  --mainColor: #99cc00;
+  --fontMainColor: black;
+  --themeColor:white;
+  --swiper-slide-packgroundColor:white
+}
+
+@media only screen and (max-width:830px) {
+  .sidenav{
+    background-color: var(--themeColor);
+  }
+}
+
+
+.sidenav{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7px;
+  position: sticky;
+  top: 0;
+  max-height:615px;
+  transition: 0.3s all;
+}
+
+.sidenav-nav{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 3px;
+  border-radius: 20px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.348);
+}
+
+h1{
+  font-family: 'Bitter', serif;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Mukta', sans-serif;
+}
+.header-dot{
+  color: var(--mainColor);
+}
+.btn-icon-nav{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  transition: 0.2s;
+  text-decoration: none;
+  color: var(--fontMainColor);
+  font-weight: bold;
+}
+.btn-icon-nav:hover{
+  background-color: var(--mainColor) ;
+}
+
+.active{
+  background-color: var(--mainColor);
+}
+
+.footer-nav{
+  writing-mode:vertical-rl;
+  transform: rotate(180deg);
+  opacity: 0.7;
+}
+
+/*----menu diplaying------*/
+.btn-menu{
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  color: var(--fontMainColor);
+  left: 15px;
+  top: 30px;
+  z-index: 2;
+}
+.display-flex{
+  display: flex;
+}
+.display-none{
+  display: none;
+}
+.btn-menu-close{
+  left: 52px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  background-color: var(--swiper-slide-packgroundColor);
+}
+.sidenav-second-version{
+  position: fixed;
+  left: 0;
+  width: 40px;
+  z-index: 4;
+  color: var(--fontMainColor);
+  height: 100%;
+  background-color: var(--swiper-slide-packgroundColor);
+}

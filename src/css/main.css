@@ -1,0 +1,145 @@
+:root{
+   --mainColor: #99cc00; 
+   --animateColor1: #89a72f;
+   --animateColor2:#bce937;
+   --animateColor3:#739d00;
+   --themeColor:white;
+   --fontMainColor: black;
+}
+
+@media only screen and (min-width:700px) {
+   .home-component{
+      flex-direction: row;
+   }
+}
+@media only screen and (max-width:700px) {
+   .home-component{
+      flex-direction: column;
+   }
+}
+@media only screen and (max-width:400px) {
+   .home-component{
+      margin-top: 100px;
+   }
+}
+
+.home-component{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   align-items: center;
+}
+
+.avatar-div{
+   border-radius: 50%;
+   border: 4px solid #99cc00;
+   padding: 5px;
+   animation-name: avatar_div_border;
+   animation-duration: 5s;
+   animation-delay: 3s;
+   animation-iteration-count: infinite;
+   animation-fill-mode: backwards;
+   animation-timing-function: ease-in-out;
+}
+
+.avatar_img{
+   max-width: 150px;
+   border-radius: 50%;
+   background-color: var(--themeColor);
+   margin-left: -40px;
+}
+
+@keyframes avatar_div_border {
+   0%{
+      border-color: var(--animateColor1);
+   }
+   25%{
+      border-color: var(--animateColor2);
+   }
+   75%{
+      border-color: var(--animateColor3);
+   }
+   100%{
+      border-color:var(--mainColor);
+   }
+}
+
+.personal-info-apreviation{
+   text-align: center;
+}
+
+.name-job-title{
+   margin-bottom: 5px;
+}
+.name-job-title span{
+   /* font-family: 'Bitter', serif; */
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.name-job-title h1{
+   font-family: 'Raleway', sans-serif;
+}
+.name-job-title h1 span{
+   color: var(--mainColor);
+}
+.name-job-title h4{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   letter-spacing: 1px;
+}
+
+/* .animate__animated.animate__bounce{
+   --animate-duration: 2s;
+   --animate-delay:5s;
+} */
+
+.socials-icons{
+   margin-top: 8px;
+}
+.socials-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 3px;
+   transition: 0.3s all;
+   border-radius: 50%;
+}
+.linkedin-icon{
+   /* color: skyblue; */
+   color: var(--fontMainColor);
+}
+.github-icon{
+   color: var(--fontMainColor);
+}
+.cv-div{
+   margin-top: 8px;
+}
+.btn{
+   padding: 15px;
+   border: none;
+   cursor: pointer;
+   background-color: transparent;
+   border-radius: 20px;
+   font-weight: bold;
+}
+.btn span{
+   font-size: 18px;
+   margin-left: 3px;
+}
+.btn-download{
+   background-color: var(--mainColor);
+   color: white;
+   margin-right: 5px;
+   position: relative;
+   transition: 0.3s all;
+}
+.btn-download:hover{
+   transform:translateY(-3px)
+}
+.btn-contact{
+   background-color: transparent;
+   color: var(--fontMainColor);
+   border: 2px solid var(--mainColor);
+   transition: 0.3s all;
+}
+.btn-contact:hover{
+   transform:translateY(-3px)
+}

@@ -1,0 +1,107 @@
+
+:root{
+    --backgroundColor: #99cc0093;
+    --mainColor: #99cc00;  
+    --swiper-pagination-color: #99cc00;  
+    --swiper-pagination-bullet-inactive-color:#000;
+    --themeColor:white;
+    --fontMainColor: black;
+    --swiper-slide-packgroundColor:white
+}
+
+/* :root { 
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;   
+} */
+
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    width: 100%;
+    min-height: 100vh;
+    transition: 0.3s all;
+    background-color: var(--themeColor);
+    color: var(--fontMainColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.components-pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.themes-div{
+    text-align: right;
+    padding: 5px;
+    width:fit-content;
+    right: 5px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 3;
+}
+.themes-colors{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    padding: 3px;
+    background-color: var(--themeColor);
+    border-radius: 5px;
+    transition: 0.3s all;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.286);
+}
+
+.btn-setting{
+    font-size: 20px;
+    background-color: var(--mainColor);
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--fontMainColor);
+}
+.btn-color{
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+}
+.btn-color:nth-child(1){
+    color: #99cc0093;
+}
+.btn-color:nth-child(2){
+    color:  rgb(228, 81, 218)
+}
+.btn-color:nth-child(3){
+    color: rgb(199, 62, 87)
+}
+.btn-color:nth-child(4){
+    color:  rgb(179, 81, 228);
+}
+.btn-color:nth-child(5){
+    color: rgb(228, 142, 81);
+}
+.btn-color:nth-child(6){
+    color: rgb(81, 223, 228);
+}
+.btn-color:nth-child(7){
+    color: rgb(221, 228, 81);
+}
+.btn-color:nth-child(8){
+    color: rgb(93, 81, 228);
+}

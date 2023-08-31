@@ -1,0 +1,100 @@
+
+:root{
+    --mainColor: #99cc00;
+    --themeColor:white;
+    --swiper-slide-packgroundColor:white;
+    --fontMainColor: black;
+}
+
+
+@media only screen and (min-width:800px) {
+    .contact-content{
+        padding-right: 40px;
+        border-right: 2px solid rgba(0, 0, 0, 0.17);
+    }
+    .contact-controllers{       
+        min-width: 420px;
+    }
+    .contact-component{
+        gap: 40px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .contact-component{
+        margin-top: 100px;
+    }
+    .contact-controllers{
+        width: 75%;
+        padding-bottom: 15px;
+    }   
+    .contact-component{
+        gap: 70px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .contact-controllers{
+        width: 85%;
+    }
+}
+
+
+.contact-component{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contact-controllers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.icon-span{
+    color: var(--mainColor);
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 3px;
+}
+.contact-content-call-info{
+    margin: 10px 0;
+}
+.contact-content h1 span{
+    color: var(--mainColor);
+}
+.contact-content h1{
+    font-family: 'Cormorant Garamond', serif;
+}
+.call-info-paragraph{
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+}
+
+.form-label{
+    display: block;
+    color: var(--mainColor);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+}
+.form-article{
+    width: 100%;
+}
+.input-text{
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 2px solid var(--mainColor);
+    font-weight: bold;
+    color: var(--fontMainColor);
+}
+.icon-span-happy{
+    color: var(--mainColor);
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}

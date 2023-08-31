@@ -1,0 +1,113 @@
+
+
+:root{
+    --mainColor: #99cc00;
+    --themeColor:white;
+    --swiper-slide-packgroundColor:white;
+    --fontMainColor: black;
+}
+
+@media only screen and (min-width:1120px) {
+    .services-container{
+        width:75%;
+    } 
+}
+@media only screen and (max-width:1120px) {
+    .services-container{
+        width:80%;
+    } 
+}
+@media only screen and (max-width:768px) {
+    .services-container{
+        width:85%;
+    } 
+}
+@media only screen and (max-width:550px) {
+    .services-container{
+        width:75%;
+    } 
+}
+@media only screen and (max-width:400px) {
+    .services-container{
+        width:95%;
+    } 
+}
+
+.services-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+.content-title{
+    text-align: center;
+    vertical-align: baseline;  
+}
+.icon-inline{
+    vertical-align:middle;
+    margin: 0 5px;
+    color: var(--mainColor);
+}
+.text-color{
+    color: var(--mainColor);
+}
+.content-title h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.services-container{
+    height: 200px;
+    padding: 10px 8px 30px 8px;
+    margin-top: 30px;
+}
+.service-card{
+    background-color: transparent;
+    box-shadow: 0 1px 3px var(--mainColor);
+}
+.icon-class-div{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px 0 10px;
+}
+.service-content{
+    padding: 3px 10px 10px 10px;
+}
+.service-description{
+    margin-bottom: 10px;
+    margin: 10px 0; 
+    opacity: 0.8;
+    letter-spacing: 0.8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.service-name{
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-nav-slide{
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    margin: 0 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.286);
+    color: var(--fontMainColor);
+    transition: 0.2s all;
+}
+.btn-nav-slide:disabled{
+    opacity: 0.5;
+    transform: scale(0.8 , 0.8)
+}
+
+/* .animate__animated.animate__flipInY{
+    --animate-duration: 1s;
+    --animate-delay:20s;
+} */
